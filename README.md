@@ -14,10 +14,8 @@ Only use 2 features: bmi & bp
 
 # Status
 
-**TBD**
+1-4 all done
 
-To run it, just execute the python file like so: `python rotten_tomatoes.py`
+To run it, just execute the python file like so: `python diabetes.py`
 
-If the CSV files `movies_year.csv` are not present in the folder, it will attempt to scrape the data and save it to CSV. You can also force this behaviour by passing `refresh=True` to the `get_movies()` function.
-
-The script will show a plot of the average audience rating of each genre for 2010 and 2020. After closing the plot window, it will then print the average runtime of dramas for 2010 and 2020.
+The script will print a string of the regression equation, show a scatter plot of the BMI (x) and blood pressure (y) with the linear regression on top of it. After closing the plot window, it will then print a string with the result of f(2).
