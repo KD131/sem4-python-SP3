@@ -13,8 +13,11 @@ def get_model(xs_reshape, ys):
 
 def plot_model_and_data(xs, ys, model, xs_reshape):
     plt.figure()
+    plt.title("Diabetes")
+    plt.xlabel("BMI")
+    plt.ylabel("Blood pressure")
     plt.scatter(xs, ys, s=20)
-    plt.plot(xs, model.predict(xs_reshape), c='k')
+    plt.plot(xs, model.predict(xs_reshape), linewidth=3, c='k')
     plt.show()
 
 def predict_for_x(model, x):
